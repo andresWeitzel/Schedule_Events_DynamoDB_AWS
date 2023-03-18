@@ -25,6 +25,10 @@ sls -v
 ```git
 npm i
 ```
+* Instalamos dynamodb con la configuración de librerias que se encuentran dentro de .dynamodb. Procedemos a instalar dicho servicio 
+```git
+sls dynamodb install
+```
 * Creamos un archivo para almacenar las variables ssm utilizadas en el proyecto (Más allá que sea un proyecto con fines no comerciales es una buena práctica utilizar variables de entorno).
   * Click der sobre la raíz del proyecto
   * New file
@@ -92,7 +96,7 @@ npm install --save serverless-dynamodb-local
 * Descargamos la Java Runtime Engine (JRE) versión 6.x o posterior. [Descargar desde aquí](https://www.oracle.com/java/technologies/downloads/)
 * Descargamos el .jar que contendrá toda la configuración para la instalación . [Descargar desde aquí](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html#DynamoDBLocal.DownloadingAndRunning.title)
 * Una vez descargado el .jar en formato .tar descomprimimos y copiamos todo su contenido dentro de la carpeta que se cread de dynamo en el proyecto (.dynamodb)
-* Procedemos a instalar el servicio
+* Procedemos a instalar el servicio de dynamodb
 ```git
 sls dynamodb install
 ```
