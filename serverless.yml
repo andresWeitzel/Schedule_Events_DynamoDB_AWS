@@ -4,7 +4,7 @@ frameworkVersion: '3'
 
 provider:
   name: aws
-  runtime: nodejs14.x
+  runtime: nodejs16.x
   stage: dev
   region : us-west-1
   memorySize: 512
@@ -22,19 +22,26 @@ plugins:
 
 functions:
   createUser:
-    handler: src/lambdas/createUser.add
+    handler: src/controllers/createUser.add
     events:
       - http:
           method: post
           path: create
-          private: true        
+          private: true
+      # Invoke Lambda function every rate time
+      - schedule: rate(2 minute)
+      # Invoke Lambda function every 2nd minute from Mon-Fri
+      - schedule: cron(0/2 * ? * MON-FRI *)            
   getAllUsers:
-    handler: src/lambdas/getUsers.get
+    handler: src/controllers/getUsers.get
     events:
       - http:
           method: get
           path: get-all
           private: true
+      # Invoke Lambda function every rate time
+      - schedule: rate(3 minute)
+           
 
 
 resources:
