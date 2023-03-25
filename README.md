@@ -277,9 +277,9 @@ sls offline start
  <br>
 
 
-#### Configuración
- * [Cómo usar Sequelize con Node.js y MySQL](https://jasonwatmore.com/post/2022/06/26/nodejs-mysql-connect-to-mysql-database-with-sequelize-mysql2)
- * [Videotutorial Recomendado](https://www.youtube.com/watch?v=im7THL67z0c)
+#### Schedule-cron
+ * [Example in Serverles](https://github.com/serverless/examples/tree/v3/aws-node-scheduled-cron)
+ * [AWS Doc](https://www.youtube.com/watch?v=im7THL67z0c)
 
 #### Herramientas 
  * [Herramienta de Diseño AWS app.diagrams.net](https://app.diagrams.net/?splash=0&libs=aws4)

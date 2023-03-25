@@ -21,7 +21,7 @@ provider:
       format: "requestId: $context.requestId"
       executionLogging: true
       level: INFO
-      fullExecutionData: true
+      fullExecutionData: truet
       role: arn:aws:iam::xxxx:role
       roleManagedExternally: false           
 
