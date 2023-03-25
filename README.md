@@ -143,13 +143,28 @@ npm init -y
 ```git
 npm i serverless-offline --save-dev
 ```
+* Agregamos el plugin dentro del serverless.yml
+```yml
+plugins:
+  - serverless-offlline
+``` 
 * Instalamos serverless ssm 
 ```git
 npm i serverless-offline-ssm --save-dev
 ```
+* Agregamos el plugin dentro del serverless.yml
+```yml
+plugins:
+  - serverless-offlline-ssm
+```  
 * Instalamos serverless-dynamoDB-local (No dynamoDB)
 ```git
 npm install --save serverless-dynamodb-local
+```
+ * Agregamos el plugin dentro del serverless.yml
+```yml
+plugins:
+  - serverless-dynamodb-local
 ```
 * Descargamos la Java Runtime Engine (JRE) versión 6.x o posterior. [Descargar desde aquí](https://www.oracle.com/java/technologies/downloads/)
 * Descargamos el .jar que contendrá toda la configuración para la instalación . [Descargar desde aquí](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html#DynamoDBLocal.DownloadingAndRunning.title)
