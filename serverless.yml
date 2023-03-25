@@ -14,6 +14,16 @@ provider:
     apiKeys:
       - name : xApiKey
         value : ${file(./serverless_ssm.yml):X_API_KEY}
+  logs:
+    # Enable REST API logs
+    restApi:
+      accessLogging: true
+      format: "requestId: $context.requestId"
+      executionLogging: true
+      level: INFO
+      fullExecutionData: true
+      role: arn:aws:iam::xxxx:role
+      roleManagedExternally: false           
 
 plugins:
     - serverless-dynamodb-local
@@ -23,10 +33,11 @@ plugins:
 functions:
   createUser:
     handler: src/controllers/createUser.add
+    description: Function to create a user in a programmed way and store it in the db
     events:
       - http:
           method: post
-          path: create
+          path: /create
           private: true
       # Invoke Lambda function every rate time
       - schedule: rate(2 minute)
@@ -34,10 +45,11 @@ functions:
       - schedule: cron(0/2 * ? * MON-FRI *)            
   getAllUsers:
     handler: src/controllers/getUsers.get
+    description: Function to obtain a user in a programmed way from the db
     events:
       - http:
           method: get
-          path: get-all
+          path: /get-all
           private: true
       # Invoke Lambda function every rate time
       - schedule: rate(3 minute)

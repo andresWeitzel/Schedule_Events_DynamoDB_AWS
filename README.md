@@ -13,13 +13,24 @@ App para la ejecución de operaciones y eventos programados sobre base de datos 
  
  <br>
  
-### Sección 1) Descripción, Tecnologías y Referencias
+### Sección 1)  Descripción, configuración y tecnologías
 
  - [1.0) Descripción del Proyecto.](#10-descripción-)
  - [1.1) Ejecución del Proyecto.](#11-ejecución-del-proyecto-)
  - [1.2) Configuración del proyecto desde cero](#12-configuración-del-proyecto-desde-cero-)
  - [1.3) Tecnologías.](#13-tecnologías-)
- - [1.4) Referencias.](#14-referencias-)
+
+### Sección 2) Endpoints y Ejemplos 
+ 
+ - [2.0) EndPoints y recursos.](#20-endpoints-y-recursos-)
+ - [2.1) Ejemplos.](#21-ejemplos-)
+
+### Sección 3) Prueba de funcionalidad y Referencias
+ 
+ - [3.0) Prueba de funcionalidad.](#30-prueba-de-funcionalidad-)
+ - [3.1) Referencias.](#31-referencias-)
+
+
 
 <br>
 
@@ -29,7 +40,7 @@ App para la ejecución de operaciones y eventos programados sobre base de datos 
 
 <br>
 
-## Sección 1) Descripción, Tecnologías y Dependencias 
+## Sección 1) Descripción, configuración y tecnologías
 
 
 ### 1.0) Descripción [🔝](#índice-) 
@@ -166,8 +177,6 @@ sls offline start
 
  <br>
  
-### Tecnologías Implementadas
-
 | **Tecnologías** | **Versión** | **Finalidad** |               
 | ------------- | ------------- | ------------- |
 | [SDK](https://www.serverless.com/framework/docs/guides/sdk/) | 4.3.2  | Inyección Automática de Módulos para Lambdas |
@@ -186,12 +195,13 @@ sls offline start
 </br>
 
 
-### Plugins Implementados.
-
-| **Plugin** | **Descarga** |               
+| **Plugin** | **Descripción** |               
 | -------------  | ------------- |
-| serverless-offline |  https://www.serverless.com/plugins/serverless-offline |
-| serverless-offline-ssm |  https://www.npmjs.com/package/serverless-offline-ssm |
+| [Serverless Plugin](https://www.serverless.com/plugins/) | Librerías para la Definición Modular |
+| [serverless-offline](https://www.npmjs.com/package/serverless-offline) | Este complemento sin servidor emula AWS λ y API Gateway en entorno local |
+| [serverless-offline-ssm](https://www.npmjs.com/package/serverless-offline-ssm) |  busca variables de entorno que cumplen los parámetros de SSM en el momento de la compilación y las sustituye desde un archivo  |
+
+
 
 
 
@@ -210,12 +220,62 @@ sls offline start
 </details>
 
 
-### 1.4) Referencias [🔝](#índice-)
+
+<br>
+
+
+## Sección 2) Endpoints y Ejemplos. 
+
+
+### 2.0) Endpoints y recursos [🔝](#índice-) 
+
+<details>
+  <summary>Ver</summary>
+
+<br>
+
+</details>
+
+
+### 2.1) Ejemplos [🔝](#índice-) 
+
+<details>
+  <summary>Ver</summary>
+
+
+<br>
+
+</details>
+
+
+
+
+<br>
+
+
+
+
+
+## Sección 3) Prueba de funcionalidad y Referencias. 
+
+
+### 3.0) Prueba de funcionalidad [🔝](#índice-) 
+
+<details>
+  <summary>Ver</summary>
+
+<br>
+
+</details>
+
+
+### 3.1) Referencias [🔝](#índice-)
 
 <details>
   <summary>Ver</summary>
  
  <br>
+
 
 #### Configuración
  * [Cómo usar Sequelize con Node.js y MySQL](https://jasonwatmore.com/post/2022/06/26/nodejs-mysql-connect-to-mysql-database-with-sequelize-mysql2)
@@ -234,6 +294,8 @@ sls offline start
 <br>
 
 </details>
+
+
 
 
 
